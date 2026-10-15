@@ -1,6 +1,7 @@
 package vista;
 
 import excepciones.LamparaApagadaException;
+import excepciones.LamparaEncendidaException;
 import modelo.Lampara;
 
 import javax.swing.*;
@@ -46,7 +47,7 @@ public class PanelLampara extends JPanel {
             try {
                 lampara.subirBrillo();
                 mostrar("Brillo: " + lampara.getBrillo() + " %");
-            } catch (LamparaApagadaException ex) {
+            } catch (LamparaEncendidaException ex) {
                 mostrar(ex.getMessage());
             }
         });
