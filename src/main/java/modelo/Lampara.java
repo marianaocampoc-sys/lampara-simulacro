@@ -12,7 +12,9 @@ public class Lampara {
     public static final int BRILLO_MAXIMO = 100;
 
     /** Cuánto sube el brillo cada vez que se presiona el botón. */
+
     public static final int PASO_BRILLO = 25;
+
 
     private boolean encendida;
     private int brillo;
