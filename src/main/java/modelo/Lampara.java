@@ -1,6 +1,6 @@
 package modelo;
 
-import excepciones.LamparaApagadaException;
+import excepciones.LamparaEncendidaException;
 
 /**
  * Representa una lámpara que se puede encender, apagar y a la que se le
@@ -44,11 +44,11 @@ public class Lampara {
     /**
      * Sube el brillo un paso, sin pasarse del máximo.
      *
-     * @throws LamparaApagadaException si la lámpara está apagada
+     * @throws LamparaEncendidaException si la lámpara está apagada
      */
-    public void subirBrillo() throws LamparaApagadaException {
+    public void subirBrillo() throws LamparaEncendidaException {
         if (!encendida) {
-            throw new LamparaApagadaException("No se puede subir el brillo: la lámpara está apagada.");
+            throw new LamparaEncendidaException("No se puede subir el brillo: la lámpara está apagada.");
         }
         brillo = Math.min(brillo + PASO_BRILLO, BRILLO_MAXIMO);
     }
