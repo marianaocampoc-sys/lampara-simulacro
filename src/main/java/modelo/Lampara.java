@@ -46,7 +46,7 @@ public class Lampara {
     /**
      * Sube el brillo un paso, sin pasarse del máximo.
      *
-     * @throws LamparaEncendidaException si la lámpara está apagada
+     * @throws LamparaEncendidaException si la lámpara está encendida
      */
     public void subirBrillo() throws LamparaEncendidaException {
         if (!encendida) {
