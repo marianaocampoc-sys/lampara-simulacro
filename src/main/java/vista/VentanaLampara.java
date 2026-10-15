@@ -11,7 +11,7 @@ public class VentanaLampara extends JFrame {
      * Configura la ventana y le agrega el panel.
      */
     public VentanaLampara() {
-        setTitle("Simulador de lámpara");
+        setTitle("Una simple lampara");
         add(new PanelLampara());
         pack();
         setDefaultCloseOperation(EXIT_ON_CLOSE);
