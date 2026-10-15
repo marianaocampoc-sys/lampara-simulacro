@@ -24,7 +24,7 @@ public class PanelLampara extends JPanel {
         lampara = new Lampara();
 
         JButton btnEncender = new JButton("Encender");
-        JButton btnApagar = new JButton("Apagar");
+        JButton btnApagar = new JButton("Apagar ya");
         JButton btnSubir = new JButton("Subir brillo");
         lblMensaje = new JLabel("La lámpara está apagada.");
 
